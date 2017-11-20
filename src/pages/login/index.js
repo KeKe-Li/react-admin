@@ -1,10 +1,14 @@
 import React from 'react';
 import { Form, Input, Button, notification, Icon } from 'antd';
 import createHistory from 'history/createHashHistory';
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux';
+import {clickLogin,resetLogin,retrieveUsername,getStat} from '../../redux/actions/actions'
 // import ServiceUrl from '../../utils/Service';
 // import  Fetch from '../../utils/fetch';
 
 import './index.less'
+import Fetch from "../../utils/fetch";
 
 const FormItem = Form.Item;
 const history = createHistory();
@@ -81,7 +85,10 @@ class LoginPage extends React.Component {
             </div>
         );
     }
+
+
 }
+
 
 let Login = Form.create()(LoginPage);
 export default Login;

@@ -1,8 +1,19 @@
 import React from 'react';
 import { Row, Col, Card} from 'antd';
 import './index.less'
+import Fetch from "../../utils/fetch";
 
 export default class index extends React.Component {
+
+
+    componentDidMount() {
+        Fetch.getRequest("192.168.2.139:81/api/transportation", null, (data) => {
+            console.log(data);
+        },(error) =>{
+            console.log(error);
+        });
+    }
+
     render() {
         return (
             <div>

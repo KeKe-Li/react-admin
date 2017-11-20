@@ -54,11 +54,11 @@ export default class wysiwyg extends Component {
         });
     };
 
-    // clearContent = () => {
-    //     this.setState({
-    //         contentState: '',
-    //     });
-    // };
+    clearContent = () => {
+        this.setState({
+            contentState: '',
+        });
+    };
 
     onContentStateChange = (contentState) => {
         console.log('contentState', contentState);
