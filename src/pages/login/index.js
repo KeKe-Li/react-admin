@@ -16,7 +16,6 @@ class LoginPage extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        const { fetchData } = this.props;
         let username = this.props.form.getFieldsValue().username;
         let password = this.props.form.getFieldsValue().password;
         if (username === 'admin' && password === 'admin') {
