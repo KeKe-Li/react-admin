@@ -1,10 +1,19 @@
 import React from 'react';
 import { Row, Col, Card} from 'antd';
 import './index.less'
-
+import Fetch from '../../utils/fetch'
 
 export default class index extends React.Component {
 
+    get = () => {
+
+        Fetch.deleteRequest("118.31.35.60:3080/api/transportation", null, (data) => {
+            console.log(data);
+        },(error) =>{
+            console.log(error);
+        });
+
+    };
 
     render() {
         return (
@@ -16,6 +25,9 @@ export default class index extends React.Component {
                                 <div className="clear y-center">
                                     <div className="clear">
                                         <div className="text-muted">欢迎进入react管理</div>
+                                        <button type='button' className="login" onClick={this.get}>
+                                            获取
+                                        </button>
                                     </div>
                                 </div>
                             </Card>
