@@ -139,21 +139,18 @@ npm本地运行 npm run start  || yarn start
 * [使用Mock.js进行独立于后端的前端开发](https://segmentfault.com/a/1190000003087224)
 
 #### React 组件生命周期
-
-
-
 ```
     * Mounting：已插入真实 DOM
     * Updating：正在被重新渲染
     * Unmounting：已移出真实 DOM
     
-    React 为每个状态都提供了两种处理函数，will 函数在进入状态之前调用，did 函数在进入状态之后调用，三种状态共计五种处理函数。
+   React 为每个状态都提供了两种处理函数，will 函数在进入状态之前调用，did 函数在进入状态之后调用，三种状态共计五种处理函数。
     * componentWillMount :会在组件render之前执行，并且永远都只执行一次。 
     * componentDidMount：组件加载完毕之后立即执行
     * componentWillReceiveProps： 组件接收到一个新的prop时被执行。这个方法在初始化render时不会被调用
     * componentWillUpdate：组件接收到新的props或者state但还没有render时被执行
     * componentDidUpdate :在组件完成更新后立即执行
-    
+      
     
 ```
 
@@ -615,6 +612,13 @@ module.exports = devConfig;
 ```
 
 * param 通过 /:param 的方式传递；
+
+#### React的 Diff算法
+react的diff算法用在什么地方呢？当组件更新的时候，react会创建一个新的虚拟dom树并且会和之前储存的dom树进行比较，这个比较多过程就用到了diff算法，所以组件初始化的时候是用不到的。react提出了一种假设，相同的节点具有类似的结构，而不同的节点具有不同的结构。在这种假设之上进行逐层的比较，如果发现对应的节点是不同的，那就直接删除旧的节点以及它所包含的所有子节点然后替换成新的节点。如果是相同的节点，则只进行属性的更改。
+
+对于列表的diff算法稍有不同，因为列表通常具有相同的结构，在对列表节点进行删除，插入，排序的时候，单个节点的整体操作远比一个个对比一个个替换要好得多，所以在创建列表的时候需要设置key值，这样react才能分清谁是谁。当然不写key值也可以，但这样通常会报出警告，通知我们加上key值以提高react的性能。
+
+
 
 ### License
 This is free software distributed under the terms of the MIT license
