@@ -72,10 +72,9 @@ npm run build
 
 
 ```
-本地运行
-npm install
+npm本地安装依赖 npm install || yarn本地安装依赖 yarn install
 
-npm start
+npm本地运行 npm run start  || yarn start
 ```
 
 ### 技术栈
