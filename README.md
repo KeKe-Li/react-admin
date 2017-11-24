@@ -105,8 +105,8 @@ npm本地运行 npm run start  || yarn start
 │   ├── start.js               启动项目文件
 │   └── test.js                测试项目文件
 ├── src
-│     
-│ 
+│   |   |
+│   |   |
 │   │   ├── actions            redux中的action
 │   │   ├── components         通用功能组件
 │   │   ├── container          通用样式组件
@@ -150,9 +150,10 @@ npm本地运行 npm run start  || yarn start
     * componentWillReceiveProps： 组件接收到一个新的prop时被执行。这个方法在初始化render时不会被调用
     * componentWillUpdate：组件接收到新的props或者state但还没有render时被执行
     * componentDidUpdate :在组件完成更新后立即执行
-      
-    
+   
 ```
+   ![](https://github.com/KeKe-Li/react/blob/master/src/assets/images/prop.png)
+
 
 #### export 和 export default的
   
@@ -618,6 +619,7 @@ react的diff算法用在什么地方呢？当组件更新的时候，react会创
 
 对于列表的diff算法稍有不同，因为列表通常具有相同的结构，在对列表节点进行删除，插入，排序的时候，单个节点的整体操作远比一个个对比一个个替换要好得多，所以在创建列表的时候需要设置key值，这样react才能分清谁是谁。当然不写key值也可以，但这样通常会报出警告，通知我们加上key值以提高react的性能。
 
+ ![](https://github.com/KeKe-Li/react/blob/master/src/assets/images/diff.png)
 
 
 ### License
