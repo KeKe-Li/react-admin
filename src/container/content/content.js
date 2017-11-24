@@ -9,6 +9,8 @@ import Editor from "../../pages/editor";
 
 const {Content} = Layout;
 
+
+
 export default class Contents extends React.Component {
 
     render() {
