@@ -16,13 +16,12 @@ class LoginPage extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
+        const { fetchData } = this.props;
         let username = this.props.form.getFieldsValue().username;
         let password = this.props.form.getFieldsValue().password;
         if (username === 'admin' && password === 'admin') {
             // 表单的路由
             history.push('/index');
-        } else {
-            this.openNotificationWithIcon('info');
         }
 
         // let parameter = {
@@ -38,17 +37,6 @@ class LoginPage extends React.Component {
         //     console.log(error);
         // })
     };
-
-    // 返回一个弹框对象，提示用户名和密码
-    // openNotificationWithIcon = (type) => {
-    // return notification[type]({
-    //          message: '用户名&密码',
-    //          description: 'admin',
-    //          duration: 6,
-    //          icon: <Icon type="smile-circle" style={{ color: '#108ee9' }} />,
-    //     })
-    // };
-    //
 
     componentDidMount() {
         // this.openNotificationWithIcon('info');
