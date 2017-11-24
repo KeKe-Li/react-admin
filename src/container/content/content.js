@@ -17,6 +17,7 @@ export default class Contents extends React.Component {
                 <Route path="/index" component={index}/>
                 <Route path="/write" component={Write}/>
                 <Route path="/tools" component={Editor}/>
+                <Route path="/editor" component={Editor}/>
             </Content>
         );
     }
