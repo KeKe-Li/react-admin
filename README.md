@@ -615,3 +615,6 @@ module.exports = devConfig;
 ```
 
 * param 通过 /:param 的方式传递；
+
+### License
+This is free software distributed under the terms of the MIT license
