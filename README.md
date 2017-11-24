@@ -2,7 +2,6 @@
 
  [![npm version](https://badge.fury.io/js/jest.svg)](http://badge.fury.io/js/jest)
 
-
 ####安装最新的node.js 
 
 ```
