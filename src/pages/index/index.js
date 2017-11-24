@@ -7,12 +7,6 @@ export default class index extends React.Component {
 
     get = () => {
 
-        Fetch.deleteRequest("118.31.35.60:3080/api/transportation", null, (data) => {
-            console.log(data);
-        },(error) =>{
-            console.log(error);
-        });
-
     };
 
     render() {
