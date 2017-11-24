@@ -1,8 +1,9 @@
-import { combineReducers } from 'redux'
-import * as todoList from './todoList'
+import {combineReducers} from 'redux'
+import auth from './auth'
 
 const rootReducer = combineReducers({
-  ...todoList,
+    auth,
+
 });
 
 export default rootReducer

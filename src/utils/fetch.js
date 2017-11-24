@@ -64,7 +64,7 @@ let Fetch = {
         let opts = {
             method:"DELETE",
             headers:{
-                'Accept': 'application/json',
+                'Accept': 'application/vnd.sunmi.v1+json',
                 'Content-Type': 'application/json',
             },
             body:JSON.stringify(params)

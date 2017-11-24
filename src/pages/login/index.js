@@ -1,14 +1,12 @@
 import React from 'react';
-import { Form, Input, Button, notification, Icon } from 'antd';
+import { Form, Input, Button,Icon } from 'antd';
 import createHistory from 'history/createHashHistory';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux';
-import {clickLogin,resetLogin,retrieveUsername,getStat} from '../../redux/actions/actions'
 // import ServiceUrl from '../../utils/Service';
 // import  Fetch from '../../utils/fetch';
 
 import './index.less'
-import Fetch from "../../utils/fetch";
 
 const FormItem = Form.Item;
 const history = createHistory();
@@ -42,18 +40,18 @@ class LoginPage extends React.Component {
     };
 
     // 返回一个弹框对象，提示用户名和密码
-    openNotificationWithIcon = (type) => {
-    return notification[type]({
-             message: '用户名&密码',
-             description: 'admin',
-             duration: 6,
-             icon: <Icon type="smile-circle" style={{ color: '#108ee9' }} />,
-        })
-    };
-
+    // openNotificationWithIcon = (type) => {
+    // return notification[type]({
+    //          message: '用户名&密码',
+    //          description: 'admin',
+    //          duration: 6,
+    //          icon: <Icon type="smile-circle" style={{ color: '#108ee9' }} />,
+    //     })
+    // };
+    //
 
     componentDidMount() {
-        this.openNotificationWithIcon('info');
+        // this.openNotificationWithIcon('info');
     }
 
     render() {
