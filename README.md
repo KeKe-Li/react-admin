@@ -2,7 +2,7 @@
 
  [![npm version](https://badge.fury.io/js/jest.svg)](http://badge.fury.io/js/jest)
 
-####安装最新的node.js 
+### 安装最新的node.js 
 
 ```
 npm install -g n  //首先安装n模块
