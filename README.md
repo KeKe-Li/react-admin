@@ -1,4 +1,4 @@
-## React项目一健构建
+## React项目一键构建
 
  [![npm version](https://badge.fury.io/js/jest.svg)](http://badge.fury.io/js/jest)
 
