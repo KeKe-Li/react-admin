@@ -45,7 +45,7 @@
     "echarts": "^3.6.1",
     "echarts-for-react": "^1.4.1",
     "es6-promise": "^4.1.0",
-    "eslint": "^3.16.1",
+    "eslint": "^4.18.2",
     "eslint-config-react-app": "^0.6.2",
     "eslint-loader": "1.6.0",
     "eslint-plugin-flowtype": "2.21.0",
