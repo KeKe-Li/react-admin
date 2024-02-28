@@ -61,7 +61,7 @@
     "jest": "^18.1.0",
     "json-loader": "0.5.4",
     "less-loader": "^4.0.3",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.0.0",
     "postcss-loader": "1.2.2",
