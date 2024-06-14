@@ -12,10 +12,10 @@ node -v  //检查更新是否成功
 
 ```
 
-#### 修改npm源为淘宝源
+#### 修改npm源为官方源
 
 ```
-npm config set registry “https://registry.npm.taobao.org”
+npm config set registry https://registry.npmjs.org/
 
 ```
 
